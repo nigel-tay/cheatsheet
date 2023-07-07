@@ -43,13 +43,32 @@
 
 * Append the following to the command you copied previously (authSource is **CASE SENSITIVE** please take note):
 
-   /`database name`?authSource=admin
+   /`databaseName`?authSource=admin
 
-   It should look like this after you are done:
+   It should look something like this after you are done:
 
    VARIABLE_NAME: `SPRING_DATA_MONGODB_URI`
    
    VALUE: `mongodb://mongo:zafDXoaiuTw80q3bMvqM@containers-us-west-207.railway.app:7018/NAMEOFMYDATABASE?authSource=admin`
+
+### Import your data to your MongoDB instance
+To make things easier, `cd` into the directory where your data is located. If you are not in the directory that is housing your json file, you will need to provide the full path when you run the command later.
+
+1. Run the mongoimport command, change the flags accordingly.
+
+   **Flag legend**
+   
+   --uri : Put in your mongodb URI string after this flag
+   
+   -c : The name of your collection
+
+   The command should have the following structure:
+
+   `mongoimport --uri <MongoDB URI string with extra appenddage> -c <collection name> --jsonArray --type=json <filename or full filepath>`
+
+   Here is an example command for reference:
+   
+   `mongoimport --uri "mongodb://mongo:zafDXoaiuTw80q3bMvqM@containers-us-west-207.railway.app:7018/bgg?authSource=admin" -ccomment --jsonArray --type=json comment.json`
 
 You are technically done. What's left is to generate a domain and cross your fingers
 
@@ -72,7 +91,10 @@ You are technically done. What's left is to generate a domain and cross your fin
 
 2. Application is not able to retrieve data from MongoDB.
 
-  Double check the your environment variable is properly set, and have the following structure:
+  Double check that your environment variable is properly set, and have the following structure:
   
-  <mongodb URI>/<database name>?authSource=admin
-  mongodb://mongo:zafDXoaiuTw80q3bMvqM@containers-us-west-207.railway.app:7018/NAMEOFMYDATABASE?authSource=admin
+  `<mongodb URI>/<database name>?authSource=admin`
+
+  Example:
+  
+  mongodb://mongo:zafDXoaiuTw80q3bMvqM@containers-us-west-207.railway.app:7018/boardgames?authSource=admin
