@@ -1,5 +1,6 @@
 # Cheatsheet Table of Contents:
 <a href="https://github.com/nigel-tay/cheatsheet/blob/main/README.md#deploying-a-mongo-springboot-app-to-railway">Deploying a mongo springboot app to railway</a>
+<a href="https://github.com/nigel-tay/cheatsheet/blob/main/README.md#paf-commands">PAF Commands</a>
 
 # Deploying a mongo springboot app to railway
 ### Deploy your Springboot application to Railway
@@ -98,3 +99,22 @@ You are technically done. What's left is to generate a domain and cross your fin
   Example:
   
   mongodb://mongo:zafDXoaiuTw80q3bMvqM@containers-us-west-207.railway.app:7018/boardgames?authSource=admin
+
+# PAF Commands
+## Mongo CLI commands:
+
+### Mongoimport locally
+
+`mongoimport -hlocalhost -p27017 -d<databasename> -c<collectionname> --jsonArray --type=json <filename or filepath>`
+
+Example:
+
+`mongoimport -hlocalhost -p27017 -dshows -ctv-show --jsonArray --type=json tv-shows.json`
+
+### Mongoimport to remote
+
+`mongoimport --uri <MongoDB URI string>/<database name>?authSource=admin -c <collection name> --jsonArray --type=json <filename or full filepath>`
+
+Example:
+   
+`mongoimport --uri "mongodb://mongo:zafDXoaiuTw80q3bMvqM@containers-us-west-207.railway.app:7018/bgg?authSource=admin" -ccomment --jsonArray --type=json comment.json`
