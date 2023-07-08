@@ -3,6 +3,8 @@
 
 <a href="https://github.com/nigel-tay/cheatsheet/blob/main/README.md#paf-commands">PAF Commands</a>
 
+<a href="https://github.com/nigel-tay/cheatsheet/blob/main/README.md#mongo-command-cheatsheet">Mongo Command Cheatsheet</a>
+
 # Deploying a mongo springboot app to railway
 ### Deploy your Springboot application to Railway
 1. If you havent logged into railway locally, do it through your terminal
@@ -119,3 +121,6 @@ Example:
 Example:
    
 `mongoimport --uri "mongodb://mongo:zafDXoaiuTw80q3bMvqM@containers-us-west-207.railway.app:7018/bgg?authSource=admin" -ccomment --jsonArray --type=json comment.json`
+
+## Mongo Command Cheatsheet
+<img src="images/mongo_command_cheatsheet.png" />
