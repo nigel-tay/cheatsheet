@@ -106,11 +106,11 @@ You are technically done. What's left is to generate a domain and cross your fin
 
 ### Mongoimport locally
 
-`mongoimport -hlocalhost -p27017 -d<databasename> -c<collectionname> --jsonArray --type=json <filename or filepath>`
+`mongoimport -hlocalhost:27017 -d<databasename> -c<collectionname> --jsonArray --type=json <filename or filepath>`
 
 Example:
 
-`mongoimport -hlocalhost -p27017 -dshows -ctv-show --jsonArray --type=json tv-shows.json`
+`mongoimport -hlocalhost:27017 -drestaurant -crestaurants --jsonArray --type=json restaurants.json`
 
 ### Mongoimport to remote
 
