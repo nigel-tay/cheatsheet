@@ -1,5 +1,5 @@
 # Cheatsheet Table of Contents:
-<a href="">Dependency List</a>
+<a href="https://github.com/nigel-tay/cheatsheet/blob/main/README.md#dependency-list">Dependency List</a>
 
 <a href="https://github.com/nigel-tay/cheatsheet/blob/main/README.md#deploying-a-mongo-springboot-app-to-railway">Deploying a mongo springboot app to railway</a>
 
