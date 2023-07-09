@@ -1,9 +1,33 @@
 # Cheatsheet Table of Contents:
+<a href="">Dependency List</a>
+
 <a href="https://github.com/nigel-tay/cheatsheet/blob/main/README.md#deploying-a-mongo-springboot-app-to-railway">Deploying a mongo springboot app to railway</a>
 
 <a href="https://github.com/nigel-tay/cheatsheet/blob/main/README.md#paf-commands">PAF Commands</a>
 
 <a href="https://github.com/nigel-tay/cheatsheet/blob/main/README.md#mongo-command-cheatsheet">Mongo Command Cheatsheet</a>
+
+# Dependency List
+### Mongo Springboot Application
+1. Spring Boot Devtools
+2. Spring Web
+3. Spring Data MongoDB
+
+Optional:
+
+4. Thymeleaf
+5. Lombok
+
+### SQL Springboot Application
+1. Spring Boot Devtools
+2. Spring Web
+3. JDBC API
+4. MySQL Driver
+
+Optional:
+
+5. Thymeleaf
+6. Lombok
 
 # Deploying a mongo springboot app to railway
 ### Deploy your Springboot application to Railway
@@ -79,7 +103,7 @@ You are technically done. What's left is to generate a domain and cross your fin
    Project service > Settings > under domain, Generate domain
    
 ---
-## Some possible fixes to errors you may encounter
+### Some possible fixes to errors you may encounter
 1. `railway up` is not working / Build is failing
 
    Make sure your project's java version is one that railway supports (e.g. 19, 17, or look at the definitive list <a href="https://nixpacks.com/docs/providers/java">here</a>)
