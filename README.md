@@ -148,6 +148,10 @@ Example:
 
 ### Importing files that are not json arrays
 
+If you're getting this error:
+
+`Failed: invalid JSON input. Position: 16. Character: O`
+
 `mongoimport -d DbName -c CollectionName --legacy fileName.json`
 
 ## Mongo Command Cheatsheet
