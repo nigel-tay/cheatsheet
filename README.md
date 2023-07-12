@@ -146,5 +146,9 @@ Example:
    
 `mongoimport --uri "mongodb://mongo:zafDXoaiuTw80q3bMvqM@containers-us-west-207.railway.app:7018/bgg?authSource=admin" -ccomment --jsonArray --type=json comment.json`
 
+### Importing files that are not json arrays
+
+`mongoimport -d DbName -c CollectionName --legacy fileName.json`
+
 ## Mongo Command Cheatsheet
 <img src="images/mongo_command_cheatsheet.png" />
