@@ -35,7 +35,9 @@ JSON Glassfish:
 
 https://mvnrepository.com/artifact/org.glassfish/jakarta.json
 
+Redis Client:
 
+https://mvnrepository.com/artifact/redis.clients/jedis
 
 # Deploying a mongo springboot app to railway
 ### Deploy your Springboot application to Railway
