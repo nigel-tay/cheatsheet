@@ -29,6 +29,14 @@ Optional:
 5. Thymeleaf
 6. Lombok
 
+### URL to other dependencies
+
+JSON Glassfish:
+
+https://mvnrepository.com/artifact/org.glassfish/jakarta.json
+
+
+
 # Deploying a mongo springboot app to railway
 ### Deploy your Springboot application to Railway
 1. If you havent logged into railway locally, do it through your terminal
