@@ -31,11 +31,11 @@ Optional:
 
 ### URL to other dependencies
 
-JSON Glassfish:
+JSON-P:
 
 https://mvnrepository.com/artifact/org.glassfish/jakarta.json
 
-Redis Client:
+Redis Client Jedis:
 
 https://mvnrepository.com/artifact/redis.clients/jedis
 
