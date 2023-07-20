@@ -39,6 +39,15 @@ Redis Client Jedis:
 
 https://mvnrepository.com/artifact/redis.clients/jedis
 
+Spring Data Redis:
+
+```
+<dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-data-redis-reactive</artifactId>
+</dependency>
+```
+
 # Deploying a mongo springboot app to railway
 ### Deploy your Springboot application to Railway
 1. If you havent logged into railway locally, do it through your terminal
