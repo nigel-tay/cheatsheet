@@ -181,6 +181,7 @@ Failed: invalid JSON input. Position: 16. Character: O`
 ## Fullstack default .gitignore file
 
 ```
+.DS_Store
 # SPRINGBOOT SIDE
 fullstackweather/HELP.md
 fullstackweather/target/
