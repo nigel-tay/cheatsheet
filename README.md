@@ -7,7 +7,7 @@
 
 <a href="https://github.com/nigel-tay/cheatsheet/blob/main/README.md#mongo-command-cheatsheet">Mongo Command Cheatsheet</a>
 
-<a href="https://github.com/nigel-tay/cheatsheet/blob/main/README.md#sql-springboot-application">Fullstack .gitignore file</a>
+<a href="https://github.com/nigel-tay/cheatsheet/blob/main/README.md#fullstack-default-gitignore-file">Fullstack .gitignore file</a>
 
 # Dependency List
 ### Mongo Springboot Application
