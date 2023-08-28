@@ -7,6 +7,8 @@
 
 <a href="https://github.com/nigel-tay/cheatsheet/blob/main/README.md#mongo-command-cheatsheet">Mongo Command Cheatsheet</a>
 
+<a href="https://github.com/nigel-tay/cheatsheet/blob/main/README.md#sql-springboot-application">Mongo Command Cheatsheet</a>
+
 # Dependency List
 ### Mongo Springboot Application
 1. Spring Boot Devtools
@@ -169,9 +171,91 @@ Example:
 
 If you're getting this error:
 
-`Failed: invalid JSON input. Position: 16. Character: O`
+Failed: invalid JSON input. Position: 16. Character: O`
 
 `mongoimport -d DbName -c CollectionName --legacy fileName.json`
 
 ## Mongo Command Cheatsheet
 <img src="images/mongo_command_cheatsheet.png" />
+
+## Fullstack default .gitignore file
+
+```
+# SPRINGBOOT SIDE
+fullstackweather/HELP.md
+fullstackweather/target/
+fullstackweather/!.mvn/wrapper/maven-wrapper.jar
+fullstackweather/!**/src/main/**/target/
+fullstackweather/!**/src/test/**/target/
+
+### STS ###
+fullstackweather/.apt_generated
+fullstackweather/.classpath
+fullstackweather/.factorypath
+fullstackweather/.project
+fullstackweather/.settings
+fullstackweather/.springBeans
+fullstackweather/.sts4-cache
+
+### IntelliJ IDEA ###
+fullstackweather/.idea
+fullstackweather/*.iws
+fullstackweather/*.iml
+fullstackweather/*.ipr
+
+### NetBeans ###
+fullstackweather/nbproject/private/
+fullstackweather/nbbuild/
+fullstackweather/dist/
+fullstackweather/nbdist/
+fullstackweather/.nb-gradle/
+fullstackweather/build/
+fullstackweather/!**/src/main/**/build/
+fullstackweather/!**/src/test/**/build/
+
+### VS Code ###
+fullstackweather/.vscode/
+
+# ANGULAR SIDE
+
+# Compiled output
+fsweatherfe/dist
+fsweatherfe/tmp
+fsweatherfe/out-tsc
+fsweatherfe/bazel-out
+
+# Node
+fsweatherfe/node_modules
+fsweatherfe/npm-debug.log
+fsweatherfe/yarn-error.log
+
+# IDEs and editors
+fsweatherfe/.idea/
+fsweatherfe/.project
+fsweatherfe/.classpath
+fsweatherfe/.c9/
+fsweatherfe/*.launch
+fsweatherfe/.settings/
+fsweatherfe/*.sublime-workspace
+
+# Visual Studio Code
+fsweatherfe/.vscode/*
+fsweatherfe/!.vscode/settings.json
+fsweatherfe/!.vscode/tasks.json
+fsweatherfe/!.vscode/launch.json
+fsweatherfe/!.vscode/extensions.json
+fsweatherfe/.history/*
+
+# Miscellaneous
+fsweatherfe/.angular/cache
+fsweatherfe/.sass-cache/
+fsweatherfe/connect.lock
+fsweatherfe/coverage
+fsweatherfe/libpeerconnection.log
+fsweatherfe/testem.log
+fsweatherfe/typings
+
+# System files
+fsweatherfe/.DS_Store
+fsweatherfe/Thumbs.db
+```
